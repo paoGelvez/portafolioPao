@@ -1,9 +1,26 @@
-{% extends "base.html" %}
+{% extends 'base.html' %} 
+{% load static %}
 
-{% block title %}Inicio - Paola Gelvez{% endblock %}
+{% block title %}Inicio{% endblock %} 
 
 {% block content %}
-<h1>¡Hola! Soy Paola ✨</h1>
-<p>Autenticidad y transparencia me representan 🦊🦋💧</p>
-<p>¡Bienvenida a mi portafolio personal!</p>
+    <section class="seccion-perfil">
+        <div class="info-texto">
+            <h1>¡Hola! Soy Paola. Mi código impulsa la transformación.</h1>
+            <p class="subtitulo-carrera">Desarrolladora (Python/Django & React)</p>
+            
+            <div class="datos-personales">
+                <p>Mi motor no es solo el *framework*, sino un **compromiso con la sostenibilidad**. Donde otros vieron complicaciones, yo encontré mi pasión por desglosar retos y construir soluciones robustas.</p>
+                
+                <p><strong>Stack Principal:</strong> Python (Django), JavaScript (React), SQL, MySQL, PHP (Laravel) y Java.</p>
+                <p><strong>Filosofía:</strong> Soy Estudiante de Ingeniera de sistemas* con un enfoque en el **aprendizaje continuo**. Si no domino una herramienta, aprendo a dominarla. Mi objetivo es el impacto.</p>
+            </div>
+            
+            <a href="/contacto" class="btn-contacto">Hablemos de tu proyecto</a>
+        </div>
+
+        <div class="info-imagen">
+            <img src="{% static 'inicio/img/paola_perfil.jpg' %}" alt="Foto de Perfil de Paola Gelvez" class="foto-perfil">
+        </div>
+    </section>
 {% endblock %}
