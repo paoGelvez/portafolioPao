@@ -1,0 +1,66 @@
+/* ======================================= */
+/* Archivo: proyectos.css                */
+/* ======================================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 30px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+    }
+}
+
+.project-card {
+    background-color: var(--secondary-bg); /* Usar variable */
+    border-left: 5px solid var(--accent-color); /* Usar variable */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mejorada */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más grande */
+}
+
+.project-card h2 {
+    color: var(--accent-color); /* Usar variable */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.project-card p {
+    color: var(--text-dark); /* Usar variable */
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.project-card strong {
+    color: var(--text-light); /* Texto fuerte más claro */
+}
+
+/* Estilo para los enlaces de repositorio */
+.repo-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #555555; /* Gris oscuro */
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.repo-link:hover {
+    background-color: var(--accent-color); /* Púrpura al pasar el mouse */
+    transform: translateY(-2px);
+}
