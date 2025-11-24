@@ -85,3 +85,42 @@ h1 {
 .btn-contacto:hover {
     background-color: #b529e3;
 }
+
+/* Contenido de proyectos.css */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 30px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+    }
+}
+
+.project-card {
+    background-color: #2a2a2a;
+    border-left: 5px solid #A020F0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.project-card p {
+    color: #cccccc;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.project-card strong {
+    color: #A020F0;
+}

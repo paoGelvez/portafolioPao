@@ -1,11 +1,27 @@
-{% extends "base.html" %}
-
-{% block title %}Contacto – Paola Gelvez{% endblock %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Contacto</h1>
-<p>¿Quieres hablar conmigo?</p>
-<p>📩 Escríbeme a: <strong>pgelvez1@udi.edu.co</strong></p>
-<p>📍Bucaramanga, Colombia</p>
-<p>💼 Abierta a oportunidades y colaboraciones</p>
+<div class="container" style="max-width: 600px; margin: 0 auto;">
+    <div class="header">
+        <h1>Hablemos de tu Proyecto</h1>
+        <p class="subtitle">Estoy activamente buscando la oportunidad de adquirir experiencia profesional en mi área, idealmente trabajando algunas horas durante las vacaciones. Envíame un mensaje.</p> 
+        </div>
+
+    <hr>
+
+    <form class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="submit-button">Enviar Mensaje</button>
+    </form>
+</div>
+
 {% endblock %}

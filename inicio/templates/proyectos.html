@@ -1,16 +1,48 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
-{% block title %}Proyectos – Paola Gelvez{% endblock %}
+<link rel="stylesheet" href="{% static 'inicio/proyectos.css' %}">
 
 {% block content %}
-<h1>Proyectos</h1>
-<p>Aquí encontrarás algunos proyectos que he desarrollado usando Python, Django, bases de datos y más.</p>
+<div class="container">
+    <div class="header">
+        <h1>Portafolio de Proyectos</h1>
+        <p class="subtitle">Mi experiencia abarca diversas tecnologías. Esta sección demuestra cómo Python estructura y gestiona estos datos con POO.</p>
+    </div>
 
-<ul>
-    <li>📌 Portafolio Web Personal (este sitio)</li>
-    <li>🗂 Sistema Nacional de Información de Peajes</li>
-    <li>💻 Proyectos académicos de programación</li>
-</ul>
+    <hr>
 
-<p>Pronto agregaré enlaces y capturas 😎</p>
+    <div class="project-grid">
+        
+        <div class="project-card">
+            <h2>Crud con login </h2>
+            <p><strong>Tecnología Principal:</strong> [php con lavarel ]</p>
+            <p><strong>Descripción:</strong> es un pequeño proyecto con inicio de sesion que demuestra mi aprendizaje y manejo de bases de datos agregar , consultar , enviar información .</p>
+            <a href="https://github.com/paoGelvez/CrudApp.git" target="_blank" class="repo-link">Ver Código en GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Página Web Interfaz & UI/UX</h2>
+            <p><strong>POO en Python:</strong> Demuestro cómo los atributos del modelo (Título, Descripción) llenan esta interfaz visual generada por Python/Django.</p>
+            <p><strong>Tecnología Principal:</strong> [ NODEJS,HTML,CSS]</p>
+            <p><strong>Descripción:</strong> Pequeño proyecto practica para aprender a manejar nodejs.</p>
+            <a href="https://github.com/paoGelvez/MISION.git" target="_blank" class="repo-link">Ver Código en GitHub/GitLab</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Website coffe </h2>
+            <p><strong>Tecnología Principal:</strong> [css,html ]</p>
+            <p><strong>Descripción:</strong> En mis primeros pasos como front - end hice esta website agrega cositas al carro de compras y se tiene manejo de eventos  .</p>
+            <a href="https://github.com/paoGelvez/websiteCoffe.git" target="_blank" class="repo-link">Ver Código en GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Inicio de sesión de netflix </h2>
+            <p><strong>Tecnología Principal:</strong> [js,html,css ]</p>
+            <p><strong>Descripción:</strong> quise aprender a hacer un login de netflix y pumm ahi esta .. .</p>
+            <a href="https://github.com/paoGelvez/loginNetflix.git" target="_blank" class="repo-link">Ver Código en GitHub</a>
+        </div>
+        
+    </div>
+</div>
 {% endblock %}

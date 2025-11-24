@@ -1,9 +1,40 @@
-{% extends "base.html" %}
-
-{% block title %}Sobre mí – Paola Gelvez{% endblock %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Sobre mí</h1>
-<p>Me considero una persona creativa, auténtica .</p>
-<p>Estoy en constante aprendizaje para mejorar día a día 💪.</p>
+<div class="container">
+    <div class="header">
+        <h1>Sobre Mí: Paola Gelvez</h1>
+        <p class="subtitle">Desarrolladora de Aplicaciones con dominio en Python, POO y diseño web.</p> 
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Experiencia y Habilidades</h2>
+        <p>Soy una desarrolladora Autentica y proactiva, enfocada en la creación de soluciones robustas y escalables. Mi conocimiento en Programación Orientada a Objetos (POO) me permite crear código modular y fácil de mantener.</p>
+        
+        <h3>Stack Tecnológico</h3>
+        <ul class="skills-list">
+            <li><strong>Back-End:</strong> Python, Django, POO, Mysql.</li>
+            <li><strong>Front-End:</strong> HTML5, CSS, JavaScript.</li>
+            <li><strong>Versatilidad:</strong> Java , Mongo , Oracle, Laravel, NodeJS , React ].</li>
+            <li><strong>Despliegue:</strong> Git, GitHub, Render.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Diplomados y Certificaciones</h2>
+        <ul class="skills-list">
+            <li><strong>Bases de Datos:</strong> MySQL y MongoDB.</li>
+            <li><strong>Lenguajes Clave:</strong> JavaScript.</li>
+            <li><strong>Especialización:</strong> Desarrollo Web.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Filosofía de Trabajo</h2>
+        <p>Mi enfoque se centra en la limpieza del código y la usabilidad de la interfaz (UI/UX). Busco convertir requisitos complejos en aplicaciones funcionales que ofrezcan una gran experiencia al usuario final.</p>
+    </div>
+
+</div>
 {% endblock %}

@@ -1,15 +1,35 @@
-{% extends "base.html" %}
-
-{% block title %}Estudios – Paola Gelvez{% endblock %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Estudios</h1>
-<p>📚 Ingeniería de Sistemas – Actualmente cursando</p>
-<p>Materias destacadas:</p>
-<ul>
-    <li>Desarrollo Web</li>
-    <li>Bases de Datos</li>
-    <li>Programación Orientada a Objetos</li>
-</ul>
-<p>Mi enfoque: ser cada vez más profesional y técnica 💙</p>
+<div class="container">
+    <div class="header">
+        <h1>Formación Académica y Profesional</h1>
+        <p class="subtitle">Detalle de mis estudios formales, certificaciones y dominio de idiomas.</p>
+    </div>
+
+    <hr>
+    
+    <div class="section">
+        <h2>Educación Superior</h2>
+        <ul class="skills-list">
+            <li><strong>Ingeniería de Sistemas:</strong> Estudiante de 4to. semestre en la Universidad de Investigación y Desarrollo (UDI).</li>
+            <li><strong>Idiomas:</strong> Coreano (Nivel Intermedio).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Diplomados y Certificaciones</h2>
+        <p>Mi formación complementaria me ha permitido adquirir habilidades específicas de alta demanda:</p>
+        <ul class="skills-list">
+            <li><strong>Bases de Datos:</strong> MySQL y MongoDB.</li>
+            <li><strong>Desarrollo Web y Lógica:</strong> JavaScript y Desarrollo Web.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <p>Esta formación me permite abordar proyectos con una base sólida tanto en Back-End (Python/Django) como en Front-End.</p>
+    </div>
+
+</div>
 {% endblock %}
