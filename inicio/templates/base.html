@@ -5,29 +5,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>{% block title %}{% endblock %} | Portafolio de Paola</title>
+    <title>{% block title %}Portafolio Paola Gelvez{% endblock %}</title>
     
     <link rel="stylesheet" href="{% static 'inicio/style.css' %}">
     
-    {% block extra_css %}{% endblock %}
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    {% block extra_css %}{% endblock %} 
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="/sobre">Sobre mí</a>
-            <a href="/proyectos">Proyectos</a>
-            <a href="/estudios">Estudios</a>
-            <a href="/contacto">Contacto</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'sobre_mi' %}">Sobre Mí</a>
+                <a href="{% url 'estudios' %}">Estudios</a>
+                <a href="{% url 'proyectos' %}">Proyectos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container"> 
-        {% block content %}{% endblock %}
+    <main>
+        {% block content %}
+        {% endblock %}
     </main>
 
-    {% block extra_js %}{% endblock %}
+    <footer>
+        <p style="text-align: center; color: #888; padding: 20px;">
+            Desarrollado con Python/Django y POO por Paola Gelvez.
+        </p>
+    </footer>
 </body>
 </html>
