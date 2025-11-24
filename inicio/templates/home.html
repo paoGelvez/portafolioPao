@@ -1,22 +1,19 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Inicio{% endblock %} 
-
 {% block content %}
-    <section class="seccion-perfil">
-        <div class="info-texto">
-            <h1>¡Hola! Soy Paola. Mi código impulsa la transformación.</h1>
-            <p class="subtitulo-carrera">Desarrolladora (Python/Django & React)</p>
-            
-            <div class="datos-personales">
-                <p>Mi motor es el desarrollo. Donde otros vieron complicaciones, yo encontré mi pasión por desglosar retos y construir soluciones robustas.</p>
-                
-                <p><strong>Lenguajes Principales:</strong> Python (Django), JavaScript (React), SQL, MySQL, PHP (Laravel) y Java.</p>
-                <p><strong>Filosofía:</strong> Soy Estudiante de Ingeniera de sistemas con un enfoque en el aprendizaje continuo. Si no domino una herramienta, aprendo a dominarla. Mi objetivo es el impacto.</p>
-            </div>
-            
-            <a href="/contacto" class="btn-contacto">Hablemos de tu proyecto</a>
-        </div>
-    </section>
+<div class="container content-grid">
+    <div class="text-content">
+        <h1>¡Hola! Soy Paola. Mi código impulsa la transformación.</h1>
+        <h2>Desarrolladora de Aplicaciones con Python & Experta en POO</h2>
+
+        <p>Mi motor es el desarrollo. Donde otros vieron complicaciones, yo encontré mi pasión por desglosar retos y construir soluciones robustas.</p>
+        
+        <p><strong>Lenguajes Principales:</strong> Python (Django), JavaScript (React), SQL, MySQL, PHP (Laravel) y Java.</p>
+        
+        <p><strong>Filosofía:</strong> Soy Estudiante de Ingeniería de Sistemas con un enfoque en el aprendizaje continuo. Si no domino una herramienta, aprendo a dominarla; mi objetivo es el impacto.</p>
+        
+        <a href="{% url 'contacto' %}" class="btn-primary" style="margin-top: 40px;">Hablemos de tu proyecto</a>
+    </div>
+</div>
 {% endblock %}

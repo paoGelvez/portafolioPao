@@ -56,3 +56,25 @@
     background-color: var(--button-hover-bg);
     transform: translateY(-3px);
 }
+
+/* --- CSS Adicional para Contacto --- */
+
+.form-row {
+    display: flex; /* Activa Flexbox para poner elementos en fila */
+    gap: 20px; /* Espacio entre los dos elementos */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1; /* Hace que ambos grupos tomen el mismo ancho */
+}
+
+/* Ajuste del input para que no se salga de su contenedor */
+.contact-form input[type="text"], 
+.contact-form input[type="email"], 
+.contact-form textarea {
+    width: 100%; /* Ajustado para respetar padding y bordes del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    /* ... el resto de tu estilo de input ... */
+}
+/* Asegúrate de que box-sizing: border-box; esté en los estilos del input en style.css */
